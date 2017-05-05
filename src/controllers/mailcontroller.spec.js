@@ -1,6 +1,6 @@
 var mailController = require('../controllers/mailcontroller.js');
-var api_key = 'key-23451ba8460915e079365e592636b89e';
-var domain = 'sandbox76dbe5dcaeed4bcab08438f081e43068.mailgun.org';
+var api_key = '';
+var domain = '';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 //need to add tests
