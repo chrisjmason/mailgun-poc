@@ -1,0 +1,20 @@
+{
+  "name": "mail-poc",
+  "version": "1.0.0",
+  "description": "poc for sending email",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node . --autotest --watch .",
+    "start": "nodemon server.js"
+  },
+  "author": "cmason",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "jasmine": "^2.6.0",
+    "mailgun-js": "^0.10.1",
+    "node-emoji": "^1.5.1",
+    "nodemon": "^1.11.0"
+  }
+}
