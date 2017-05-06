@@ -1,5 +1,5 @@
-var api_key = 'key-6374c1c6f1882f43d14730ec5344b351';
-var domain = 'showstar.ngreen.co';
+var api_key = '';
+var domain = '';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 exports.sendApproverEmail = function(req, res){
@@ -59,11 +59,7 @@ var getRequesterHtml = function(requester, approver, courseTitle, courseDate){
 
 var sendMessage = function(data, res){
 	mailgun.messages().send(data, function (error, body) {
-		if(!error){
-			res.status(200);
-		}else{
-			res.status(400);
-		}
+		(!error) ? res.status(200) : res.status(400);
 		res.send(body);
 	  	console.log(body);
 	});
