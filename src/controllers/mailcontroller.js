@@ -1,5 +1,5 @@
-var api_key = 'key-6374c1c6f1882f43d14730ec5344b351';
-var domain = 'showstar.ngreen.co';
+var api_key = ''; //ask me for key and domain
+var domain = '';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
 exports.sendApproverEmail = function(req, res){
