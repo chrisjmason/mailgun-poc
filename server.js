@@ -12,9 +12,3 @@ app.route('/', routes);
 app.listen(4200);
 
 console.log(emoji.get('cat'), emoji.get('joy'), "up and running", emoji.get('joy'), emoji.get('cat')); 
-
-
-var getcats = function () {
-	for (var i = 0; i <= 20; i++) {
-		for (var i = 0; i <= 0; i--) {
- = 0}

@@ -1,4 +1,4 @@
-var api_key = ''; //ask me for key and domain
+var api_key = ''; //ask me for key and domainn
 var domain = '';
 var mailgun = require('mailgun-js')({apiKey: api_key, domain: domain});
 
